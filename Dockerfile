@@ -1,0 +1,7 @@
+FROM ubuntu
+
+MAINTAINER Jason Harrell jason.harrell@icidigital.com
+
+RUN apt-get update && apt-get install -y python3 python-setuptools python-dev gcc libcurl4-openssl-dev libssl-dev && easy_install pip
+
+CMD ["bash"]

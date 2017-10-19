@@ -1,0 +1,5 @@
+key: your-key-here
+secret: your-secret-here
+host: my
+domain: host.com
+refresh: 300
