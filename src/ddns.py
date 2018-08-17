@@ -41,7 +41,7 @@ def get_host_ip():
     
 def set_host_ip(ip):
     url = "{}{}/records/A/{}".format(api_url, config['domain'], config['host'])
-    response = requests.put(url, json={ 'data': ip, 'ttl': 3600 }, headers=api_headers)
+    response = requests.put(url, json=[{ 'data': ip, 'ttl': 3600 }], headers=api_headers)
     log.info("Set host IP returned: %s", response.status_code)
 
 #### Main / Startup functions ####
